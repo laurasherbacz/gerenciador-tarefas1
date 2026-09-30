@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <a class="brand brand-light" href="login.html" aria-label="ToDo, página inicial">
+        <span class="brand-mark">✓</span>
+        <span>ToDo</span>
+      </a>
+      <div class="intro-copy">
+        <p class="eyebrow">ORGANIZAÇÃO SEM COMPLICAÇÃO</p>
+        <h1>Suas tarefas,<br><strong>no seu ritmo.</strong></h1>
+        <p>Planeje o dia, acompanhe suas prioridades e celebre cada tarefa concluída.</p>
+      </div>
+      <div class="intro-note">
+      </div>
+    </section>
+
+    <section class="auth-panel" aria-labelledby="login-title">
+      <div class="auth-card">
+        <div class="mobile-brand brand">
+          <span class="brand-mark">✓</span>
+          <span>ToDo</span>
+        </div>
+        <p class="eyebrow eyebrow-blue">BEM-VINDO(A) DE VOLTA</p>
+        <h2 id="login-title">Entre na sua conta</h2>
+        <p class="auth-subtitle">Continue de onde você parou.</p>
+
+        <form class="auth-form" action="tarefas.html" method="get">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+
+          <div class="label-row">
+            <label for="password">Senha</label>
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+          <input id="password" name="password" type="password" placeholder="Digite sua senha" required>
+
+          <label class="check-label" for="remember">
+            <input id="remember" name="remember" type="checkbox">
+            <span>Lembrar de mim</span>
+          </label>
+
+          <button class="button button-primary" type="submit">Entrar na conta <span>→</span></button>
+        </form>
+
+        <p class="auth-switch">Ainda não tem uma conta? <a href="cadastro.html">Criar cadastro</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

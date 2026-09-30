@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo | Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <a class="brand brand-light" href="login.html" aria-label="ToDo, página inicial">
+        <span class="brand-mark">✓</span>
+        <span>ToDo</span>
+      </a>
+      <div class="intro-copy">
+        <p class="eyebrow">UM NOVO COMEÇO</p>
+        <h1>Faça espaço<br>para o que <strong>vem aí.</strong></h1>
+        <p>Crie sua conta e transforme sua lista de tarefas em um plano possível.</p>
+      </div>
+      <div class="intro-note">
+      </div>
+    </section>
+
+    <section class="auth-panel" aria-labelledby="register-title">
+      <div class="auth-card register-card">
+        <div class="mobile-brand brand">
+          <span class="brand-mark">✓</span>
+          <span>taskflow</span>
+        </div>
+        <p class="eyebrow eyebrow-blue">COMECE AGORA</p>
+        <h2 id="register-title">Crie sua conta</h2>
+
+        <form class="auth-form" action="login.html" method="get">
+          <label for="name">Nome completo</label>
+          <input id="name" name="name" type="text" placeholder="Como podemos chamar você?" required>
+
+          <label for="register-email">E-mail</label>
+          <input id="register-email" name="email" type="email" placeholder="voce@exemplo.com" required>
+
+          <label for="register-password">Crie uma senha</label>
+          <input id="register-password" name="password" type="password" placeholder="Mínimo de 8 caracteres" minlength="8" required>
+
+          <label class="check-label" for="terms">
+            <input id="terms" name="terms" type="checkbox" required>
+            <span>Concordo com os termos de uso e a política de privacidade.</span>
+          </label>
+
+          <button class="button button-primary" type="submit">Criar minha conta <span>→</span></button>
+        </form>
+
+        <p class="auth-switch">Já tem uma conta? <a href="login.html">Fazer login</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
