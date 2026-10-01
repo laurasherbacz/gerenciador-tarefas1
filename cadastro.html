@@ -39,7 +39,8 @@
           <label for="register-password">Crie uma senha</label>
           <input id="register-password" name="password" type="password" placeholder="Mínimo de 8 caracteres" minlength="8" required>
 
-          <span id="message" class="form-message" role="status"></span>
+          <p class="login-message login-success" role="status">Cadastro realizado com sucesso!</p>
+          <p class="login-message login-error" role="alert">E-mail já cadastrado</p>
           
           <button class="button button-primary" type="submit">Criar minha conta <span>→</span></button>
         </form>
@@ -47,5 +48,6 @@
       </div>
     </section>
   </main>
+  <script src="js/cadastro.js"></script>
 </body>
 </html>
