@@ -8,12 +8,19 @@
 </head>
 <body class="app-page">
   <header class="topbar">
-    <a class="brand" href="login.html"><span class="brand-mark">✓</span><span>ToDo</span></a>
+    <a class="brand" href="login.html">
+      <span class="brand-mark">✓</span>
+      <span>ToDo</span>
+    </a>
     <nav class="topnav" aria-label="Navegação principal">
       <a class="nav-link active" href="tarefas.html">Minhas tarefas</a>
       <a class="nav-link" href="#categorias">Categorias</a>
     </nav>
-    <div class="profile"><span class="avatar">LM</span><span class="profile-name">Laura Martins</span><span class="profile-chevron">⌄</span></div>
+    <div class="profile">
+      <span class="avatar">LM</span>
+      <span class="profile-name">Laura Martins</span>
+      <span class="profile-chevron">⌄</span>
+    </div>
   </header>
 
   <main class="dashboard">
@@ -22,21 +29,72 @@
         <p class="eyebrow eyebrow-blue">QUARTA-FEIRA, 30 DE SETEMBRO</p>
         <h1>Olá, Laura <span></span></h1>
       </div>
-      <button class="button button-primary add-button" type="button">+ <span>Nova tarefa</span></button>
+      <button class="button button-primary add-button" type="button">
+        + <span>Nova tarefa</span>
+      </button>
     </div>
 
     <section class="stats" aria-label="Resumo das tarefas">
-      <article class="stat-card"><span class="stat-icon blue-icon">▦</span><div><strong>8</strong><span>Total de tarefas</span></div></article>
-      <article class="stat-card"><span class="stat-icon orange-icon">◷</span><div><strong>5</strong><span>Pendentes</span></div></article>
-      <article class="stat-card"><span class="stat-icon green-icon">✓</span><div><strong>3</strong><span>Concluídas</span></div></article>
+      <article class="stat-card">
+        <span class="stat-icon blue-icon">▦</span>
+        <div><strong>8</strong><span>Total de tarefas</span></div>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon orange-icon">◷</span>
+        <div><strong>5</strong><span>Pendentes</span></div>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon green-icon">✓</span>
+        <div><strong>3</strong><span>Concluídas</span></div>
+      </article>
     </section>
 
     <section class="task-area" aria-labelledby="task-title">
-      <div class="section-heading"><div><h2 id="task-title">Suas tarefas</h2><p>Organize suas prioridades e acompanhe seu progresso.</p></div><div class="filters"><button class="filter active" type="button">Todas <span>8</span></button><button class="filter" type="button">Pendentes <span>5</span></button><button class="filter" type="button">Concluídas <span>3</span></button></div></div>
+      <div class="section-heading">
+        <div>
+          <h2 id="task-title">Suas tarefas</h2>
+          <p>Organize suas prioridades e acompanhe seu progresso.</p>
+        </div>
+        <div class="filters">
+          <button class="filter active" type="button">Todas <span>8</span></button>
+          <button class="filter" type="button">Pendentes <span>5</span></button>
+          <button class="filter" type="button">Concluídas <span>3</span></button>
+        </div>
+      </div>
       <div class="task-list">
-        <article class="task-item"><button class="task-check" type="button" aria-label="Concluir tarefa"></button><div class="task-content"><h3>Fazer exercícios de JavaScript</h3><div class="task-meta"><span>Estudos</span><span class="priority high">Alta prioridade</span><span>Hoje, 18:00</span></div></div><div class="task-actions"><button class="task-action edit-button" type="button" aria-label="Editar tarefa" title="Editar tarefa">Editar</button><button class="task-action delete-button" type="button" aria-label="Excluir tarefa" title="Excluir tarefa" onclick="return confirm('Deseja mesmo excluir esta tarefa?');">Excluir</button></div></article>
-        <article class="task-item"><button class="task-check" type="button" aria-label="Concluir tarefa"></button><div class="task-content"><h3>Revisar conteúdo do curso</h3><div class="task-meta"><span>Estudos</span><span class="priority medium">Média prioridade</span><span>Amanhã</span></div></div><div class="task-actions"><button class="task-action edit-button" type="button" aria-label="Editar tarefa" title="Editar tarefa">Editar</button><button class="task-action delete-button" type="button" aria-label="Excluir tarefa" title="Excluir tarefa" onclick="return confirm('Deseja mesmo excluir esta tarefa?');">Excluir</button></div></article>
-        <article class="task-item completed"><button class="task-check checked" type="button" aria-label="Tarefa concluída">✓</button><div class="task-content"><h3>Organizar arquivos do projeto</h3><div class="task-meta"><span>Organização</span><span class="priority low">Baixa prioridade</span><span>Concluída</span></div></div><div class="task-actions"><button class="task-action edit-button" type="button" aria-label="Editar tarefa" title="Editar tarefa">Editar</button><button class="task-action delete-button" type="button" aria-label="Excluir tarefa" title="Excluir tarefa" onclick="return confirm('Deseja mesmo excluir esta tarefa?');">Excluir</button></div></article>
+        <article class="task-item">
+          <button class="task-check" type="button" aria-label="Concluir tarefa"></button>
+          <div class="task-content">
+            <h3>Fazer exercícios de JavaScript</h3>
+            <div class="task-meta"><span>Estudos</span><span class="priority high">Alta prioridade</span><span>Hoje, 18:00</span></div>
+          </div>
+          <div class="task-actions">
+            <button class="task-action edit-button" type="button" aria-label="Editar tarefa" title="Editar tarefa">Editar</button>
+            <button class="task-action delete-button" type="button" aria-label="Excluir tarefa" title="Excluir tarefa" onclick="return confirm('Deseja mesmo excluir esta tarefa?');">Excluir</button>
+          </div>
+        </article>
+        <article class="task-item">
+          <button class="task-check" type="button" aria-label="Concluir tarefa"></button>
+          <div class="task-content">
+            <h3>Revisar conteúdo do curso</h3>
+            <div class="task-meta"><span>Estudos</span><span class="priority medium">Média prioridade</span><span>Amanhã</span></div>
+          </div>
+          <div class="task-actions">
+            <button class="task-action edit-button" type="button" aria-label="Editar tarefa" title="Editar tarefa">Editar</button>
+            <button class="task-action delete-button" type="button" aria-label="Excluir tarefa" title="Excluir tarefa" onclick="return confirm('Deseja mesmo excluir esta tarefa?');">Excluir</button>
+          </div>
+        </article>
+        <article class="task-item completed">
+          <button class="task-check checked" type="button" aria-label="Tarefa concluída">✓</button>
+          <div class="task-content">
+            <h3>Organizar arquivos do projeto</h3>
+            <div class="task-meta"><span>Organização</span><span class="priority low">Baixa prioridade</span><span>Concluída</span></div>
+          </div>
+          <div class="task-actions">
+            <button class="task-action edit-button" type="button" aria-label="Editar tarefa" title="Editar tarefa">Editar</button>
+            <button class="task-action delete-button" type="button" aria-label="Excluir tarefa" title="Excluir tarefa" onclick="return confirm('Deseja mesmo excluir esta tarefa?');">Excluir</button>
+          </div>
+        </article>
       </div>
     </section>
   </main>

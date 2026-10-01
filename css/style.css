@@ -4,12 +4,10 @@
 	--navy: #0b2b52;
 	--blue: #1769d3;
 	--bright-blue: #2f83ed;
-	--pale-blue: #eaf3ff;
 	--ink: #12263f;
 	--muted: #718198;
 	--line: #e2e9f2;
 	--white: #fff;
-	--page: #f7faff;
 }
 
 * {
@@ -19,7 +17,7 @@
 body {
 	margin: 0;
 	color: var(--ink);
-	background: var(--page);
+	background: #f7faff;
 	font-family: 'DM Sans', sans-serif;
 }
 
@@ -137,21 +135,6 @@ input {
 	line-height: 1.6;
 }
 
-.intro-note {
-	position: relative;
-	z-index: 1;
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	color: rgba(255, 255, 255, .74);
-	font-size: 13px;
-}
-
-.note-icon {
-	color: #a9d7ff;
-	font-size: 22px;
-}
-
 .auth-panel {
 	display: grid;
 	place-items: center;
@@ -250,6 +233,48 @@ input {
 	accent-color: var(--blue);
 }
 
+.form-message {
+	display: block;
+	margin-top: 7px;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.form-message:empty {
+	display: none;
+}
+
+.message-success {
+	color: #21734d;
+}
+
+.message-error {
+	color: #a6404b;
+}
+
+.login-message {
+	display: none;
+	margin: 7px 0 0;
+	padding: 11px 13px;
+	border-radius: 8px;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.login-success {
+	color: #21734d;
+	background: #e8f7ef;
+}
+
+.login-error {
+	color: #a6404b;
+	background: #fff0f1;
+}
+
+.login-message.is-visible {
+	display: block;
+}
+
 .button {
 	border: 0;
 	border-radius: 9px;
@@ -287,10 +312,6 @@ input {
 	text-align: center;
 }
 
-.register-card .auth-subtitle {
-	margin-bottom: 24px;
-}
-
 .register-card .button-primary {
 	margin-top: 17px;
 }
@@ -298,7 +319,6 @@ input {
 /* Dashboard */
 .app-page {
 	min-height: 100vh;
-	background: #f7faff;
 }
 
 .topbar {
@@ -381,7 +401,6 @@ input {
 	font-size: 25px;
 }
 
-.dashboard-subtitle,
 .section-heading p {
 	margin: 9px 0 0;
 	color: var(--muted);
