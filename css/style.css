@@ -49,7 +49,6 @@ input {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	overflow: hidden;
 	padding: 52px clamp(42px, 7vw, 110px);
 	color: var(--white);
@@ -106,6 +105,7 @@ input {
 .intro-copy {
 	position: relative;
 	z-index: 1;
+	margin-top: clamp(120px, 18vh, 220px);
 	max-width: 450px;
 }
 
