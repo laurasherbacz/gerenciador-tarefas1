@@ -99,5 +99,63 @@
       </div>
     </section>
   </main>
+
+  <div class="modal" id="modalTarefa">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <div>
+        <p class="eyebrow eyebrow-blue">ORGANIZE-SE</p>
+        <h2 id="modal-title">Nova tarefa</h2>
+      </div>
+      <button type="button" class="modal-close" id="btnFechar" aria-label="Fechar janela">×</button>
+    </div>
+
+    <div class="task-form-grid">
+      <div class="form-field form-field-full">
+        <label for="inputTarefa">Nome da tarefa</label>
+        <input type="text" id="inputTarefa" placeholder="Ex.: Estudar JavaScript" required>
+      </div>
+
+      <div class="form-field form-field-full">
+        <label for="inputDescricao">Descrição</label>
+        <textarea id="inputDescricao" rows="3" placeholder="Adicione mais detalhes (opcional)"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="inputCategoria">Categoria</label>
+        <select id="inputCategoria">
+          <option>Estudos</option>
+          <option>Trabalho</option>
+          <option>Pessoal</option>
+          <option>Organização</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="inputPrioridade">Prioridade</label>
+        <select id="inputPrioridade">
+          <option value="low">Baixa</option>
+          <option value="medium" selected>Média</option>
+          <option value="high">Alta</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="inputData">Data</label>
+        <input type="date" id="inputData">
+      </div>
+
+      <div class="form-field">
+        <label for="inputPrazo">Prazo</label>
+        <input type="time" id="inputPrazo">
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="button button-secondary" type="button" id="btnCancelar">Cancelar</button>
+      <button class="button button-primary" type="button" id="btnAdicionar">Adicionar tarefa</button>
+    </div>
+  </div>
+  </div>
 </body>
 </html>
