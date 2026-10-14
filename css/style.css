@@ -838,6 +838,13 @@ input {
     margin-top: 26px;
 }
 
+.modal-actions .button {
+    width: 160px;
+    min-height: 52px;
+    margin-top: 0;
+    padding: 0 18px;
+}
+
 .button-secondary {
     border: 1px solid var(--line);
     color: var(--ink);
